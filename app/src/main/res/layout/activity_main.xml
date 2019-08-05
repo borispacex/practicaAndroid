@@ -236,19 +236,21 @@
         android:orientation="horizontal"
         android:gravity="center">
         <Button
+            android:id="@+id/oneButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="CONVERTIR"
             android:background="@android:color/holo_blue_dark"
             android:layout_marginRight="40px"
-            android:onClick="convertir"/>
+            />
 
         <Button
+            android:id="@+id/twoButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="INICIALIZAR"
             android:background="@android:color/holo_red_light"
-            android:onClick="inicializar"/>
+            />
     </LinearLayout>
 
 </LinearLayout>
