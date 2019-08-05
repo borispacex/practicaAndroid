@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:textAlignment="center"
+        android:layout_height="wrap_content"
+        android:text="CONVERSION DE MONEDAS"
+        android:textSize="65px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:id="@+id/bolivianos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bolivianos"
+            android:layout_marginRight="45px"
+            android:textSize="50px"/>
+        <EditText
+            android:id="@+id/inbs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Bolivanos"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dolares"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dolares"
+            android:layout_marginRight="45px"
+            android:textSize="50px"/>
+        <TextView
+            android:id="@+id/valordolar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6,96"
+            android:layout_marginRight="45px"
+            android:textSize="50px"/>
+        <EditText
+            android:id="@+id/indolares"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Dolares"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/euros"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Euros"
+            android:layout_marginRight="45px"
+            android:textSize="50px"/>
+        <TextView
+            android:id="@+id/valoreuros"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7,52"
+            android:layout_marginRight="45px"
+            android:textSize="50px"/>
+        <EditText
+            android:id="@+id/ineuros"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Euros"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/soles"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Soles"
+            android:layout_marginRight="45px"
+            android:textSize="50px"/>
+        <TextView
+            android:id="@+id/valorsoles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2,23"
+            android:layout_marginRight="45px"
+            android:textSize="50px"/>
+        <EditText
+            android:id="@+id/insoles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Soles"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/pchiles"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pesos Chile"
+            android:layout_marginRight="45px"
+            android:textSize="50px"/>
+        <TextView
+            android:id="@+id/valorpchile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0,011354"
+            android:layout_marginRight="45px"
+            android:textSize="50px"/>
+        <EditText
+            android:id="@+id/inpchiles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Pesos Chilenos"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rbrasil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reales brasil"
+            android:layout_marginRight="45px"
+            android:textSize="50px"/>
+        <TextView
+            android:id="@+id/valorrbrasil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2,2852"
+            android:layout_marginRight="45px"
+            android:textSize="50px"/>
+        <EditText
+            android:id="@+id/inrbrasil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Reales Brasil"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ychina"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yuan China"
+            android:layout_marginRight="45px"
+            android:textSize="50px"/>
+        <TextView
+            android:id="@+id/valorychina"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1,1379"
+            android:layout_marginRight="45px"
+            android:textSize="50px"/>
+        <EditText
+            android:id="@+id/inychina"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Yuanes China"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/yjapon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yen Japon"
+            android:layout_marginRight="45px"
+            android:textSize="50px"/>
+        <TextView
+            android:id="@+id/valoryjapon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0,05849034"
+            android:layout_marginRight="45px"
+            android:textSize="50px"/>
+        <EditText
+            android:id="@+id/inyjapon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Yen Japon"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CONVERTIR"
+            android:background="@android:color/holo_blue_dark"
+            android:layout_marginRight="40px"
+            android:onClick="convertir"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="INICIALIZAR"
+            android:background="@android:color/holo_red_light"
+            android:onClick="inicializar"/>
+    </LinearLayout>
+
+</LinearLayout>
