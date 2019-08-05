@@ -36,6 +36,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         EditText tychina = (EditText) findViewById(R.id.inychina);
         EditText tyjapon = (EditText) findViewById(R.id.inyjapon);
 
+
         double valordolares = 6.96;
         double valoreruos = 7.52;
         double valorsoles = 2.23;
@@ -52,19 +53,115 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         double resprbrasil = 0;
         double respychina = 0;
         double respyjapon = 0;
+        double respbolivianos = 0;
 
         switch (view.getId()) {
 
             case R.id.oneButton:
                 // convertir
-                valorAconvertir = Double.parseDouble(tbolivianos.getText().toString());
-                respdolares = valorAconvertir/valordolares;
-                respeuros = valorAconvertir/valoreruos;
-                respsoles = valorAconvertir/valorsoles;
-                resppchile = valorAconvertir/valorpchiles;
-                resprbrasil = valorAconvertir/valorrbrasil;
-                respychina = valorAconvertir/valorychiona;
-                respyjapon = valorAconvertir/valoryjapon;
+
+                if (!tbolivianos.getText().toString().equals("")) {
+                    valorAconvertir = Double.parseDouble(tbolivianos.getText().toString());
+                    respdolares = valorAconvertir/valordolares;
+                    respeuros = valorAconvertir/valoreruos;
+                    respsoles = valorAconvertir/valorsoles;
+                    resppchile = valorAconvertir/valorpchiles;
+                    resprbrasil = valorAconvertir/valorrbrasil;
+                    respychina = valorAconvertir/valorychiona;
+                    respyjapon = valorAconvertir/valoryjapon;
+                }else{
+                    if (!tdolares.getText().toString().equals("")) {
+                        valorAconvertir = Double.parseDouble(tdolares.getText().toString());
+                        respdolares = valorAconvertir;
+                        respbolivianos = valorAconvertir*valordolares;
+                        respeuros = respbolivianos/valoreruos;
+                        respsoles = respbolivianos/valorsoles;
+                        resppchile = respbolivianos/valorpchiles;
+                        resprbrasil = respbolivianos/valorrbrasil;
+                        respychina = respbolivianos/valorychiona;
+                        respyjapon = respbolivianos/valoryjapon;
+                        tbolivianos.setText(String.format("%.2f", respbolivianos));
+                    }else{
+                        if (!teuros.getText().toString().equals("")) {
+                            valorAconvertir = Double.parseDouble(teuros.getText().toString());
+                            respeuros = valorAconvertir;
+                            respbolivianos = valorAconvertir*valoreruos;
+                            respsoles = respbolivianos/valorsoles;
+                            resppchile = respbolivianos/valorpchiles;
+                            resprbrasil = respbolivianos/valorrbrasil;
+                            respychina = respbolivianos/valorychiona;
+                            respyjapon = respbolivianos/valoryjapon;
+                            respdolares = respbolivianos/valordolares;
+                            tbolivianos.setText(String.format("%.2f", respbolivianos));
+                        }else{
+                            if (!tsoles.getText().toString().equals("")) {
+                                valorAconvertir = Double.parseDouble(tsoles.getText().toString());
+                                respsoles = valorAconvertir;
+                                respbolivianos = valorAconvertir*valorsoles;
+                                resppchile = respbolivianos/valorpchiles;
+                                resprbrasil = respbolivianos/valorrbrasil;
+                                respychina = respbolivianos/valorychiona;
+                                respyjapon = respbolivianos/valoryjapon;
+                                respdolares = respbolivianos/valordolares;
+                                respeuros = respbolivianos/valoreruos;
+                                tbolivianos.setText(String.format("%.2f", respbolivianos));
+                            }else{
+                                if (!tpchile.getText().toString().equals("")) {
+                                    valorAconvertir = Double.parseDouble(tpchile.getText().toString());
+                                    resppchile = valorAconvertir;
+                                    respbolivianos = valorAconvertir*valorpchiles;
+                                    resprbrasil = respbolivianos/valorrbrasil;
+                                    respychina = respbolivianos/valorychiona;
+                                    respyjapon = respbolivianos/valoryjapon;
+                                    respdolares = respbolivianos/valordolares;
+                                    respeuros = respbolivianos/valoreruos;
+                                    respsoles = respbolivianos/valorsoles;
+                                    tbolivianos.setText(String.format("%.2f", respbolivianos));
+                                }else{
+                                    if (!trbrasil.getText().toString().equals("")) {
+                                        valorAconvertir = Double.parseDouble(trbrasil.getText().toString());
+                                        resprbrasil = valorAconvertir;
+                                        respbolivianos = valorAconvertir*valorrbrasil;
+                                        respychina = respbolivianos/valorychiona;
+                                        respyjapon = respbolivianos/valoryjapon;
+                                        respdolares = respbolivianos/valordolares;
+                                        respeuros = respbolivianos/valoreruos;
+                                        respsoles = respbolivianos/valorsoles;
+                                        resppchile = respbolivianos/valorpchiles;
+                                        tbolivianos.setText(String.format("%.2f", respbolivianos));
+                                    }else{
+                                        if (!tychina.getText().toString().equals("")) {
+                                            valorAconvertir = Double.parseDouble(tychina.getText().toString());
+                                            respychina = valorAconvertir;
+                                            respbolivianos = valorAconvertir*valorychiona;
+                                            respyjapon = respbolivianos/valoryjapon;
+                                            respdolares = respbolivianos/valordolares;
+                                            respeuros = respbolivianos/valoreruos;
+                                            respsoles = respbolivianos/valorsoles;
+                                            resppchile = respbolivianos/valorpchiles;
+                                            resprbrasil = respbolivianos/valorrbrasil;
+                                            tbolivianos.setText(String.format("%.2f", respbolivianos));
+                                        }else{
+                                            if (!tyjapon.getText().toString().equals("")) {
+                                                valorAconvertir = Double.parseDouble(tyjapon.getText().toString());
+                                                respyjapon = valorAconvertir;
+                                                respbolivianos = valorAconvertir*valoryjapon;
+                                                respdolares = respbolivianos/valordolares;
+                                                respeuros = respbolivianos/valoreruos;
+                                                respsoles = respbolivianos/valorsoles;
+                                                resppchile = respbolivianos/valorpchiles;
+                                                resprbrasil = respbolivianos/valorrbrasil;
+                                                respychina = respbolivianos/valorychiona;
+                                                tbolivianos.setText(String.format("%.2f", respbolivianos));
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
 
                 tdolares.setText(String.format("%.2f", respdolares));
                 teuros.setText(String.format("%.2f", respeuros));
